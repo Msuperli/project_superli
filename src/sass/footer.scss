@@ -1,0 +1,119 @@
+.footer .server-list {
+    padding: 0 10px;
+    border-right: 1px solid #dbdbdb;
+    float:left;
+    li{
+        margin: 0 75px;
+        float:left;
+        h4{
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000;
+       }
+        a {
+        display: block;
+        line-height: 30px;
+        color: #000;
+        font-size:12px;
+        &:hover{
+            color:red;
+        }
+        }
+    }
+    li:first-of-type{
+        margin-left:0;
+    }
+}
+.footer .custom-service {
+    margin-left: 100px;
+    float:left;
+
+    h4 {
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+    }
+    
+    .server-tel {
+    margin: 5px 0 15px;
+    display: block;
+    height: 40px;
+    width: 250px;
+    background: url("../img/big.fw.png") 0 -5px no-repeat;
+    }
+    .server-btn {
+    margin-bottom: 10px;
+    display: block;
+    height: 25px;
+    width: 135px;
+    border: 1px #bdbdbd solid;
+    border-radius: 5px;
+    .zxkf {
+    display:block;
+    float:left;
+    height: 25px;
+    width: 37px;
+    background: url("../img/big.fw.png") 0px -170px no-repeat;
+    }
+    span {
+    height: 25px;
+    line-height: 25px;
+    margin-left: 15px;
+    color: #000;
+    font-size: 14px;
+    }
+}
+    .weixin-code {
+    display: block;
+    height: 90px;
+    width: 90px;
+    background: url("../img/big.fw.png") -277px -219px no-repeat;
+    }
+}
+.footer .company-cr {
+    width:100%;
+    background: #000;
+    .company-info {
+    line-height: 60px;
+    width: 1190px;
+    margin: 0 auto;
+    span {
+    display: block;
+    float: left;
+    color: #fff;
+    font-size:12px;
+}
+    .copyright {
+    margin-right: 15px;
+
+    }
+    .company-name {
+    margin-right: 30px;
+    }
+    a{
+    margin-right: 20px;
+    vertical-align: baseline;
+    display: block;
+    float: left;
+    font-size:12px;
+    color:#fff;
+    }
+    a.police-img {
+    height: 33px;
+    width: 34px;
+    margin-top: 10px;
+    background: url("../img/big.fw.png") -396px -224px no-repeat;
+    }
+   div {
+    float: right;
+    a{
+        &:hover{
+            color:red;
+        }
+        }
+    }
+}
+}
+   

@@ -1,0 +1,11 @@
+.lunbo-lzq{position:relative;width:810px;height:320px;margin:0 auto;border:10px solid #f00;overflow: hidden;}
+.lunbo-lzq ul{list-style:none;padding:0;margin:0;position:absolute;top:0;left:0;}
+.lunbo-lzq ul .fade_li{position:absolute;left:0;top:0;}
+.lunbo-lzq ul .h_li{float:left;}
+.lunbo-lzq img{display: block;}
+.lunbo-lzq .next,.lunbo-lzq .prev{display:inline-block;position:absolute;left:0;top:50%;transform: translate(0,-50%);width:30px;height:50px;line-height:50px;background-color: rgba(0,0,0,0.6);text-align:center;color:#fff;font-size:40px;border:none;outline:none;}
+.lunbo-lzq .next{left:auto;right:0;}
+.lunbo-lzq .page{position: absolute;right:15px;bottom:15px;}
+.lunbo-lzq .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;text-align:center;background-color:#efefef;border-radius:50%;}
+.lunbo-lzq .page span.active{background-color:#f60;color:#fff;}
+ 

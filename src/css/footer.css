@@ -1,0 +1,134 @@
+.footer .server-list {
+  padding: 0 10px;
+  border-right: 1px solid #dbdbdb;
+  float: left;
+}
+
+.footer .server-list li {
+  margin: 0 75px;
+  float: left;
+}
+
+.footer .server-list li h4 {
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+}
+
+.footer .server-list li a {
+  display: block;
+  line-height: 30px;
+  color: #000;
+  font-size: 12px;
+}
+
+.footer .server-list li a:hover {
+  color: red;
+}
+
+.footer .server-list li:first-of-type {
+  margin-left: 0;
+}
+
+.footer .custom-service {
+  margin-left: 100px;
+  float: left;
+}
+
+.footer .custom-service h4 {
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+}
+
+.footer .custom-service .server-tel {
+  margin: 5px 0 15px;
+  display: block;
+  height: 40px;
+  width: 250px;
+  background: url("../img/big.fw.png") 0 -5px no-repeat;
+}
+
+.footer .custom-service .server-btn {
+  margin-bottom: 10px;
+  display: block;
+  height: 25px;
+  width: 135px;
+  border: 1px #bdbdbd solid;
+  border-radius: 5px;
+}
+
+.footer .custom-service .server-btn .zxkf {
+  display: block;
+  float: left;
+  height: 25px;
+  width: 37px;
+  background: url("../img/big.fw.png") 0px -170px no-repeat;
+}
+
+.footer .custom-service .server-btn span {
+  height: 25px;
+  line-height: 25px;
+  margin-left: 15px;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer .custom-service .weixin-code {
+  display: block;
+  height: 90px;
+  width: 90px;
+  background: url("../img/big.fw.png") -277px -219px no-repeat;
+}
+
+.footer .company-cr {
+  width: 100%;
+  background: #000;
+}
+
+.footer .company-cr .company-info {
+  line-height: 60px;
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.footer .company-cr .company-info span {
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer .company-cr .company-info .copyright {
+  margin-right: 15px;
+}
+
+.footer .company-cr .company-info .company-name {
+  margin-right: 30px;
+}
+
+.footer .company-cr .company-info a {
+  margin-right: 20px;
+  vertical-align: baseline;
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer .company-cr .company-info a.police-img {
+  height: 33px;
+  width: 34px;
+  margin-top: 10px;
+  background: url("../img/big.fw.png") -396px -224px no-repeat;
+}
+
+.footer .company-cr .company-info div {
+  float: right;
+}
+
+.footer .company-cr .company-info div a:hover {
+  color: red;
+}

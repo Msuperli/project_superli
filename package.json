@@ -1,0 +1,36 @@
+{
+  "name": "li-project",
+  "version": "1.0.0",
+  "description": "我的project",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Msuperli/project_superli.git"
+  },
+  "keywords": [
+    "li",
+    "git",
+    "project"
+  ],
+  "author": "MrLi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Msuperli/project_superli/issues"
+  },
+  "homepage": "https://github.com/Msuperli/project_superli#readme"
+}
