@@ -125,13 +125,46 @@
                 $ul.stop().animate({top:target});
             }else if(opt.type=='horizontal'){
                 var target= -opt.index*opt.width;
-                $ul.stop().animate({left:target});
+                $ul.stop().animate({left:target},function(){
+                    cover();
+                });
             }else if(opt.type=='fade'){
                 $ul.find('li').eq(opt.index).stop().fadeIn().siblings().stop().fadeOut();
             }
-
          }
 
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+         // 另外加添加
+         var li_c;
+         function get_cover(){
+            li_c=$('<li/>');
+            li_c.addClass('h_li cover');
+            li_c.css({
+                background:'url(img/hn_108.png)',
+                height:550,
+                width:1920
+            });
+            li_c.appendTo($ul);
+            li_c.css({
+                    left:1800,
+                    opacity:0
+                });
+         }
+         get_cover();
+         function cover(){
+            if(opt.cover&& $ul.position().left==-1920){
+                li_c.stop().animate({
+                    left:1920,
+                    opacity:1
+                },1000);
+            }else{
+                li_c.css({
+                    opacity:0,
+                    left:1800
+                });
+            }
+         }
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
          var timer;
          $this.on('mouseenter',function(){
             clearInterval(timer);
