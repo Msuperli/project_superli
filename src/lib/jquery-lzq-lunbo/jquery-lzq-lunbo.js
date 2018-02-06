@@ -32,15 +32,12 @@
             });
             opt.len=opt.imgs.length;
             var $ul;
-
             function getimg(){
                 var html=$.map(opt.imgs,function(url){
                     return '<li><img src="'+ url +'"/></li>';
                     }).join('\n');
                 return html;
-            }
-    
-           
+            } 
         switch(opt.type){
             case 'vertical':
             function v_init(){
@@ -53,7 +50,6 @@
                     $ul.html(html);
                     $this.append($ul);
                 }
-
             }
             v_init();
             break;
@@ -237,7 +233,7 @@
             show();
          })
 
-        })
+        });
         return this;
     }
 })(jQuery);

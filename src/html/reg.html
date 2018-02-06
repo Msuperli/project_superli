@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>注册</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reg.css" />
+        <link rel="stylesheet" type="text/css" href="../img/font_955bmgotvum78pvi/iconfont.css" />
+        <script src="../js/require.js" data-main="../js/reg"></script>
+        <script src="../lib/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        jQuery(function($){
+            $('.reg-wrapper').load('login.html .wrapper',function(){
+                $('.username')[0].placeholder='邮箱/手机号';
+                var tx =$('<h/>').text('请输入手机号码或邮箱地址注册：');
+                tx.css({
+                   display:'block',
+                   marginTop:10,
+                   marginBottom:20,
+                   fontSize:15,
+                   color:'#666',
+                   fontWeight:'bold'
+                });
+                $('.login').prepend(tx);
+                var mi_box=$('<div/>').addClass('input-box');
+                var confirm=$('<input/>').addClass('password confirm');
+                confirm[0].placeholder='确认密码';
+                confirm[0].type='password';
+                confirm.appendTo(mi_box);
+                $('.sub-btn').before(mi_box);
+                var code_box=$('<div/>').addClass('input-box');
+                var code=$('<input/>').addClass('username code');
+                code.appendTo(code_box);
+                code[0].placeholder='图片验证码';
+                code.css({width:200});
+                code.parent().css({width:230});
+                mi_box.after(code_box);
+                var code_num=$('<span/>').addClass('code_num');
+                code_num.appendTo(code_box);
+                $('.sub-btn')[0].value='确认';
+                $('.other-login-type').remove();
+                $('.n_links_area').remove();
+            });
+            $('.footer').load('login.html .footer');
+            $('.top').load('login.html .top');
+        })
+        </script>
+    </head>
+    <body>
+    <div class="reg-wrapper"></div>
+    <div class="footer"></div>
+    <div class="top"></div>
+    </body>
+</html>

@@ -4,17 +4,30 @@
         <meta charset="utf-8">
        <link rel="stylesheet" type="text/css" href="css/base.css" />
        <link rel="stylesheet" type="text/css" href="lib/jquery-lzq-lunbo/jquery-lzq-lunbo.css" />
+       <link rel="stylesheet" type="text/css" href="css/header.css" />
+       <link rel="stylesheet" type="text/css" href="css/footer.css" />
        <link rel="stylesheet" type="text/css" href="css/index.css" />
        <script src="js/require.js" data-main="js/index"></script>
-    </head>
-    <body style="height:2000px;">
-   <div class="banner">
-         <div id="box"></div>
-   </div>
+       <script src="lib/jquery-3.2.1.js" type="text/javascript"></script>
+       <script type="text/javascript">
+            jQuery(function($){
+                $('.header').load('html/header.html .header');
+                $('.right-sidebar').load('html/header.html .right-sidebar');
+                $('.footer').load('html/footer.html .footer');
+            });
+       </script>
+    </head> 
+    <body>
+    <div class="header"></div>
+    <div class="right-sidebar clearfix"></div>
 
-   <div class="main">
+    <div class="banner">
+         <div id="box"></div>
+    </div>
+
+    <div class="main clearfix">
     <div class="container">
-      <div class="series-nv">
+      <div class="series-nv clearfix">
           <ul>
               <li class="item1">
                   <a href="" class="series-box">
@@ -104,9 +117,61 @@
                   </h3>
               </li>
           </ul>
-      </div> 
       </div>
-   </div>
+      </div>
+    </div>
+
+    <div class="produ-selection clearfix">
+    <div class="container">
+       <div class="produ-title">
+           <h4>
+               <a href="">A-Looop能量环科技</a>
+           </h4>
+           <h2>
+               <a href="">环形缓震大底，中腰传动结构，为跑者提供充足动力。</a>
+           </h2>
+       </div>
+
+       <div class="produ-ads clearfix">
+        <div class="lun-box clearfix">
+           <div class="slider-box">
+           </div>
+           <div class="jieshao">
+               <p class="jieshao-title">舒适潮鞋，百搭有型</p>
+               <p class="jieshao-infos">2017新款潮鞋，柔软贴合更包裹，让你的双足舒适轻盈</p>
+               <div class="jieshao-section">
+                   <p><a href="" class="jieshao-buy">立即购买</a></p>
+               </div>
+           </div>
+        </div>
+        
+        <div class="lun-box clearfix" style="margin-left:15px;">
+           <div class="slider-box-r">
+           </div>
+           <div class="jieshao">
+               <p class="jieshao-title">舒适潮鞋，百搭有型</p>
+               <p class="jieshao-infos">2017新款潮鞋，柔软贴合更包裹，让你的双足舒适轻盈</p>
+               <div class="jieshao-section">
+                   <p><a href="" class="jieshao-buy">立即购买</a></p>
+               </div>
+           </div>
+        </div>
+       </div>
+
+           </div>
+       </div>
+
+    <div class="produ-lists">
+       <ul>
+        </ul>
+    </div>
+    
+    <div class="select-more">
+      <p>
+        <a href="" class="select-more-btn">选购更多商品>></a>
+      </p>
+    </div>
+    <div class="footer"> </div>
     </body>
 </html>
   

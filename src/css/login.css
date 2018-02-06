@@ -1,0 +1,179 @@
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  color: #757575;
+  font-size: 12px;
+}
+
+.wrap {
+  width: 854px;
+  height: 640px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.wrap .logo {
+  padding: 50px 0 22px;
+  text-align: center;
+}
+
+.wrap .logo a {
+  display: inline-block;
+  width: 236px;
+  height: 39px;
+  background: url("../img/big.fw.png") -664px 0 no-repeat;
+}
+
+.wrap .login {
+  width: 358px;
+  margin: 0 auto;
+}
+
+.wrap .login form input {
+  width: 326px;
+  line-height: 16px;
+  padding: 13px 16px 13px 14px;
+  display: block;
+}
+
+.wrap .login form .input-box {
+  margin-bottom: 14px;
+  padding: 0;
+  border: 1px solid #e0e0e0;
+}
+
+.wrap .login form .sub-btn {
+  line-height: 54px;
+  text-align: center;
+  padding: 0;
+  width: 358px;
+  background: #d71921;
+  color: #fff;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.wrap .login form fieldset {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+
+.wrap .login form fieldset legend {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrap .login form .oth_type_links {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.wrap .login form .oth_type_links a {
+  color: #757575;
+  width: 30px;
+  height: 30px;
+  margin: 0 12px;
+  display: inline-block;
+}
+
+.wrap .login form .oth_type_links a:hover i {
+  color: skyblue;
+}
+
+.wrap .login form .oth_type_links a:hover .icon-weibo {
+  color: #d00;
+}
+
+.wrap .login form .oth_type_links a i {
+  font-size: 30px;
+}
+
+.wrap .login .n_links_area {
+  padding-top: 40px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.wrap .login .n_links_area a {
+  padding: 0 9px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.wrap .login .n_links_area a:hover {
+  color: #58bc58;
+}
+
+.footer {
+  margin: 15px 0 30px 0;
+}
+
+.footer p {
+  text-align: center;
+  line-height: 20px;
+}
+
+.top {
+  position: fixed;
+  right: 40px;
+  bottom: 10px;
+  padding-bottom: 73px;
+}
+
+.top .btn {
+  width: 72px;
+  height: 73px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.top .btn-qq {
+  background: url("../img/big.fw.png") 8px -400px no-repeat;
+  background-color: #fbb01f;
+  text-decoration: none;
+  display: block;
+}
+
+.top .btn-qq:hover {
+  background-color: #d00;
+}
+
+.top .btn-phone {
+  background: url("../img/big.fw.png") -82px -400px no-repeat;
+  background-color: #d71921;
+}
+
+.top .btn-phone:hover .phone {
+  display: block;
+}
+
+.top .btn-phone .phone {
+  background-color: #c73339;
+  position: absolute;
+  width: 160px;
+  left: -160px;
+  top: 0px;
+  line-height: 73px;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  display: none;
+}
+
+.top .btn-top {
+  background: url("../img/big.fw.png") -176px -400px no-repeat;
+  background-color: #666;
+  display: none;
+}
+
+.top .btn-top:hover {
+  background-color: #58bc58;
+}
