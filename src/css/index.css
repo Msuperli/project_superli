@@ -302,7 +302,6 @@
 }
 
 .produ-lists ul .produ-box:hover .produ-box-content {
-  z-index: 100;
   border-color: #f3f3f3;
   padding-bottom: 20px;
 }

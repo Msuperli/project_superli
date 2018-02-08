@@ -1,0 +1,19 @@
+.header{
+    background:#fafafa;
+    font-size:12px;
+    color:#666;
+    .header_l{
+        float:left;
+        li{
+         float:left;
+         line-height:27px;
+        }
+    }
+    .header_r{
+        float:right;
+        li{
+         float:left;
+         line-height:27px;
+        }
+    }
+}

@@ -13,7 +13,8 @@ require.config({
  });
 
 
-require(['jquery','lunbo'],function($){
+require(['jquery','header','lunbo'],function($,callback){
+    callback();
     $('#box').lunbo_li({
         imgs:['img/nianhuo_0201.jpg','img/hn_108.jpg'],
         type:'horizontal',
@@ -53,425 +54,25 @@ require(['jquery','lunbo'],function($){
         transform:'translate(-50%,0)'
     });
 
-    // var goodlist=[
-    //     {
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:1
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:2
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:3
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:4
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:5
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:6
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:7
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:8
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:9
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:10
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:11
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:12
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:13
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:14
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:15
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:16
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:17
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:18
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:19
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:20
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:21
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:22
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:23
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:24
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:25
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:26
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:27
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:28
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:29
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:30
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:31
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:32
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:33
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:34
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:35
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:36
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:37
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:38
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:39
-    //     },{
-    //         url:'img/11811102_7_01--w_288_h_288.jpg',
-    //         smallurl1:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl2:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl3:'img/11811102_10_01--w_30_h_30.jpg',
-    //         smallurl4:'img/11811102_10_01--w_30_h_30.jpg',
-    //         xinxi:'2018新款汤普森3代战靴',
-    //         price:598.00,
-    //         buy:'立即购买',
-    //         id:40
-    //     }
-    // ]
-    // console.log(goodlist);    
-    // console.log(JSON.stringify(goodlist));
-    console.log($('.produ-lists'));
-    var $goodlist=$('.produ-lists ul');
+   
     $.ajax({
-            type:'GET',
-            url:'../api/data/index.json',
+            url:'../mysql/index.php',
             dataType:'json',
             success:function(data){
-                var html=$.map(data,function(item){
+                // console.log(data);
+                getdata(data);
+            }
+        });
+
+        var $goodlist=$('.produ-lists ul');
+        function getdata(data){
+            var html=$.map(data,function(item){
                    return   ` <li class="produ-box" data-guid="${item.id}">
                                 <div class="produ-box-content">
-                                <a href="" class="produ-img">
+                                <b  class="produ-img">
                                 <img src="${item.url}" alt="" />
                                 <div class="overburden"></div>
-                                </a>
+                                </b>
                                 <div class="produ-classes">
                                  <ul>
                                    <li><img src="${item.smallurl1}" alt="" /></li>
@@ -481,18 +82,26 @@ require(['jquery','lunbo'],function($){
                                 </ul>
                                 </div>
                                 <span class="produ-info">${item.xinxi}</span>
-                                <span class="produ-price-info">￥${item.price}.00</span>
-                                <span class="produ-buy-now"><a href="" class="buy-now-btn">${item.buy}</a></span>
+                                <span class="produ-price-info">￥${item.price}</span>
+                                <span class="produ-buy-now"><b class="buy-now-btn">${item.buy}</b></span>
                                 </div>
                             </li>`
                 }).join('\n');
-                console.log(html);
-                console.log($goodlist);
                 $goodlist.html(html);
-                $('.produ-lists').append($goodlist);
-            }
+                console.log($('.produ-box'));
+                 $('.produ-lists').on('click','.produ-box',function(){
+                    console.log(this);
+                    var id=this.dataset.guid;
+                    var s='yes';
+                    location.href ='../html/detail.html?'+'id='+id+'&'+'s='+s;
+                });
+        }
+
+
+        $('.line-nav').on('click','.item-two',function(){
+            location.href ='../html/goodlist.html';
         });
-
-
+        
+       
 
 })

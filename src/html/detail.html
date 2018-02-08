@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>商品详情页</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/header.css" />
+        <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="../css/detail.css" />
+        <link rel="stylesheet" type="text/css" href="../lib/jquery-zoom-Msuperli/jquery-zoom-Msuperli.css" />
+        <script src="../js/require.js" data-main="../js/detail.js"></script>
+        <script src="../lib/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        jQuery(function($){
+               $('.header').load('../html/header.html .header',);
+               $('.right-sidebar').load('../html/header.html .right-sidebar');
+               $('.footer').load('../html/footer.html .footer');
+        });
+        </script>
+    </head>
+    <body>
+    <div class="header"></div>
+    <div class="right-sidebar clearfix"></div>
+    <div class="wcp_wrap">
+    <div class="container">
+        <ul class="list_daohang clearfix">
+            <li><a href="">首页</a><i></i></li>
+            <li><a href="">所有分类</a><i></i></li>
+            <li><a href="">鞋</a><i></i></li>
+            <li><a href="">男鞋</a><i></i></li>
+            <li><a href="">运动鞋类</a><i></i></li>
+            <li><a href="">篮球鞋</a><i></i></li>
+            <li><a href="">安踏 篮球系列</a></li>
+       </ul>
+       <div class="detail_main clearfix">
+           <div class="preview">
+               <div class="smallImg">
+                   <p class="up"><i></i></p>
+                   <ul class="smallImg_list">
+                       <li><img src="../img/smallimg1.jpg"  data-big="../img/smallbig1.jpg" /></li>
+                       <li><img src="../img/smallimg2.jpg" data-big="../img/smallbig2.jpg" /></li>
+                       <li><img src="../img/smallimg3.jpg"  data-big="../img/smallbig3.jpg" /></li>
+                       <li><img src="../img/smallimg4.jpg" data-big="../img/smallbig4.jpg" /></li>
+                       <li><img src="../img/smallimg5.jpg" data-big="../img/smallbig5.jpg" /></li>
+                   </ul>
+                   <p class="down"><i></i></p>
+               </div>
+               <div class="bigImg">
+                   <img src="../img/bigimg.jpg" height="600" width="600" alt=""/>
+               </div>
+                <div class="bigImg_bottm">
+                       <span>分享<i></i></span>
+                       <span>收藏商品<i>+</i></span>
+                </div>
+           </div>
+           <div class="pro_dtl">
+
+               <div class="pro_dtl_hd">
+                   <h1 class="clearfix">
+                       <span class="pro_type">男子ufo系列缓震篮球鞋</span>
+                       <span class="pro_num">款号：<i>11811189</i></span>
+                   </h1>
+                   <a href="" class="stars">
+                       <span></span>
+                       <span>(4.9)</span>
+                   </a>
+               </div>
+            <div class="pro_price">
+               <p><i>￥</i><span class="price">449.00</span></p> 
+               <p>
+               <span>吊牌价：449.00 </span>
+               <span>折扣：100%</span>
+               <span>(折让: ￥0)</span>
+               <span><img src="../img/youhui.png" height="24" width="112" alt="" /></span>
+               </p>
+            </div>
+            <div class="pro_sale">
+               <p><span><img src="../img/onsale_02.png" height="25" width="114" alt="" /></span></p>
+               <p>满399送安踏手握水壶（颜色随机）</p>
+               <p>微信粉丝领券满399减50</p>
+            </div>
+            <div class="color_img clearfix">
+               <p>颜色:</p>
+                <ul>
+                    <li><img src="../img/color_img1.jpg" height="220" width="220" alt="" /></li>
+                    <li><img src="../img/color_img2.jpg" height="220" width="220" alt="" /></li>
+                    <li><img src="../img/color_img3.jpg" height="220" width="220" alt="" /></li>
+                </ul>
+            </div> 
+            <div class="color_size">
+               <p>
+                   <span>尺码：</span>
+                   <span>库存：</span>
+                   <span>查看尺码对照表</span>
+               </p>
+               <ul class="clearfix">
+                   <li>39</li>
+                   <li>40</li>
+                   <li>41</li>
+                   <li>42</li>
+                   <li>42.5</li>
+                   <li>43</li>
+                   <li>44.5</li>
+                   <li>45</li>
+               </ul>
+            </div> 
+            <div class="sumbox">
+              <p>
+                <span>数量:</span>
+                <input type="number" />  
+              </p>
+              <button class="addTocart">加入购物车</button>
+              <button class="buyNow">立即购买</button>
+            </div>
+            <div class="pro_intro">
+                <h3>商品说明 :</h3>
+                <p>系列：篮球系列</p>
+                <p>底料：成型EVA/橡胶/DPU 面料：织物</p>
+            </div>
+
+           </div>
+
+       </div>
+    </div>
+    </div>
+    <div class="footer"></div>
+    </body>
+</html>

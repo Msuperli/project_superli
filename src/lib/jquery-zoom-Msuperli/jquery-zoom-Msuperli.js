@@ -27,8 +27,8 @@
                 var left,top;
                 if(opt.position=='right'){
                     left=$small.offset().left+$small.outerWidth()+opt.gap;
-                    top = $small.offset().top;
-                    console.log($small.offset().left,);
+                    top = $small.offset().top+100;
+                    console.log(top,left);
                 }else if(opt.position === 'left'){
                     left = $small.offset().left - opt.width - opt.gap;
                     top = $small.offset().top;

@@ -9,8 +9,87 @@
 .input-box .code_num {
   display: inline-block;
   position: absolute;
-  width: 50px;
-  height: 20px;
-  right: -30px;
+  width: 100px;
+  height: 43px;
+  background: #ccc;
+  right: -50%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 43px;
+  word-spacing: 5px;
   top: 0;
+}
+
+.t_phone, .t_confirm {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  right: -43px;
+  top: 0;
+  position: absolute;
+  background: url("../img/big.fw.png") -149px -512px;
+  display: none;
+}
+
+.f_phone, .t_mima, .f_mima, .f_confirm {
+  position: absolute;
+  width: 100px;
+  line-height: 18px;
+  color: #d00;
+  right: -150px;
+  top: 0;
+}
+
+.i_phone, .i_mima, .fi_mima, .i_confirm {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  left: -42px;
+  top: 0;
+  position: absolute;
+}
+
+.f_phone {
+  display: none;
+}
+
+.f_phone .i_phone {
+  background: url("../img/big.fw.png") -149px -562px;
+}
+
+.t_mima {
+  line-height: 42px;
+  display: none;
+}
+
+.i_mima {
+  left: 358px;
+  background: url("../img/big.fw.png") -149px -512px;
+  display: none;
+}
+
+.f_mima {
+  display: none;
+}
+
+.f_mima .fi_mima {
+  background: url("../img/big.fw.png") -149px -562px;
+}
+
+.f_confirm {
+  line-height: 42px;
+  display: none;
+}
+
+.f_confirm .i_confirm {
+  background: url("../img/big.fw.png") -149px -562px;
+}
+
+.caj {
+  position: absolute;
+  left: 20px;
+  top: -18px;
+  color: #d00;
+  display: none;
 }

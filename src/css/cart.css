@@ -1,0 +1,23 @@
+.header {
+  background: #fafafa;
+  font-size: 12px;
+  color: #666;
+}
+
+.header .header_l {
+  float: left;
+}
+
+.header .header_l li {
+  float: left;
+  line-height: 27px;
+}
+
+.header .header_r {
+  float: right;
+}
+
+.header .header_r li {
+  float: left;
+  line-height: 27px;
+}

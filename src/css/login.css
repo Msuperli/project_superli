@@ -34,20 +34,20 @@ html body {
   margin: 0 auto;
 }
 
-.wrap .login form input {
+.wrap .login .login_form input {
   width: 326px;
   line-height: 16px;
   padding: 13px 16px 13px 14px;
   display: block;
 }
 
-.wrap .login form .input-box {
+.wrap .login .login_form .input-box {
   margin-bottom: 14px;
   padding: 0;
   border: 1px solid #e0e0e0;
 }
 
-.wrap .login form .sub-btn {
+.wrap .login .login_form .sub-btn {
   line-height: 54px;
   text-align: center;
   padding: 0;
@@ -58,24 +58,24 @@ html body {
   margin-bottom: 23px;
 }
 
-.wrap .login form fieldset {
+.wrap .login .login_form fieldset {
   border-top: 1px solid #e0e0e0;
   padding-top: 10px;
 }
 
-.wrap .login form fieldset legend {
+.wrap .login .login_form fieldset legend {
   font-size: 14px;
   color: #b0b0b0;
   margin: 0 auto;
   text-align: center;
 }
 
-.wrap .login form .oth_type_links {
+.wrap .login .login_form .oth_type_links {
   padding-top: 10px;
   text-align: center;
 }
 
-.wrap .login form .oth_type_links a {
+.wrap .login .login_form .oth_type_links a {
   color: #757575;
   width: 30px;
   height: 30px;
@@ -83,15 +83,15 @@ html body {
   display: inline-block;
 }
 
-.wrap .login form .oth_type_links a:hover i {
+.wrap .login .login_form .oth_type_links a:hover i {
   color: skyblue;
 }
 
-.wrap .login form .oth_type_links a:hover .icon-weibo {
+.wrap .login .login_form .oth_type_links a:hover .icon-weibo {
   color: #d00;
 }
 
-.wrap .login form .oth_type_links a i {
+.wrap .login .login_form .oth_type_links a i {
   font-size: 30px;
 }
 
