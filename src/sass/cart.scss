@@ -2,11 +2,13 @@
     background:#fafafa;
     font-size:12px;
     color:#666;
+    span{cursor:pointer;}
     .header_l{
         float:left;
         li{
          float:left;
          line-height:27px;
+         margin-left:15px;
         }
     }
     .header_r{
@@ -14,6 +16,191 @@
         li{
          float:left;
          line-height:27px;
+        span{
+            padding:0 10px;
+            display:inline-block;
+            line-height:12px;
+            border-right:1px solid #ccc;
+         }
+        }
+        li:last-of-type{
+        span{
+            border:none;
+         }
+        }
+        .start{
+            span{padding-left:17px;}
+            background:url("../img/big.fw.png") -547px -870px no-repeat;
+         }
+        .phone{
+            span{padding-left:17px;}
+            background:url("../img/big.fw.png") -781px -114px no-repeat;
+        }
+    }
+    .logo{
+        height:101px;
+    }
+}
+.cart_main{
+    padding-bottom:50px;
+    margin-bottom:20px;
+    border-top:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+    .cart_main_h{
+        margin:50px 0;
+        p{
+            font-size:14px;
+            button{
+                    text-align: center;
+                    display: inline-block;
+                    padding: 0 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    color: #333;
+                    height: 25px;
+                    line-height: 25px;
+                    font-weight: 700;
+                    margin-left:150px;
+            }
+            span{float:right;color:blue; margin-right:150px;cursor:pointer;}
+        }
+    }
+}
+.cart_main{
+    .cart_inner{
+        width:1050px;
+        margin:0 auto;
+        h1{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom:5px;
+        span{cursor:pointer;}
+        }
+    }
+}
+.cart_table{
+font-size:12px;
+width:100%;
+td {
+    padding: 15px 0;
+    text-align: center;
+}
+thead{
+tr{
+background-color: #F5F5F5;
+height: 30px;
+        }
+    }
+tbody{
+tr{
+border-top:1px solid #ccc;
+.p-name{
+text-align: left;
+h2{font-size:14px;color: #333;}
+span{color: #818181;}
+}
+.p-price{
+.u_price{
+display:block;
+text-decoration: line-through; 
+color: #818181;
+margin-bottom: 3px;
+                }
+            }
+.p-qty{
+.qty-form{
+width: 140px;
+height: 30px;
+margin: 0 auto;
+border: 1px solid #ddd;
+span{
+display: inline-block;
+float: left;
+width: 30px;
+height: 30px;
+line-height: 27px;
+text-align: center;
+font-size: 18px;
+background-color: #f5f5f5;
+cursor:pointer;
+                    }
+input{
+width: 80px;
+height: 30px;
+border-top: 0;
+border-bottom: 0;
+text-align: center;
+float: left;
+                    }
+                }
+            }
+        }
+    }   
+}
+.gift{
+width:100%;
+font-size:12px;
+margin-top:30px;
+    td{ 
+    padding: 15px 0;
+    text-align: center;
+    }
+thead{
+border-top:1px solid #ccc;
+background:#f5f5f5;
+    }
+tbody{
+    td{color:#666;}
+    tr{border-top:1px solid #ccc;}
+    }
+.car_toolbar{
+font-size:16px;
+background:#fff0e7;
+.tool_price{
+color:#000;
+padding-right:50px;
+p:first-of-type{
+span{color:#d00;}
+            }
+        }
+    }
+.del_pay{
+td{padding:40px 0;color:blue;}
+.shouldpay{
+font-size:16px;
+text-align:right;
+span{color:#000;}
+span:last-of-type{
+    font-size:20px;
+    font-weight:bold;
+    color:#d00;
+            }
+        }
+    }
+.cart_total{
+background:#fff0e7;
+td{
+padding:10px 0;
+button{
+display:inline-block;
+width:132px;
+height:37px;
+text-align:center;
+font-size:14px;
+line-height:37px;
+background:#fff;
+border-radius:5px;
+margin-right:20px;
+color:#333;
+            }
+.commit{
+background:#d00;
+color:#fff;
+            }
+.shop{
+border:1px solid #ccc;
+            }
         }
     }
 }

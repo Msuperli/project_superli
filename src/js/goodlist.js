@@ -25,10 +25,11 @@ require(['jquery','header'],function($,callback){
    pageing(1,30); 
 
    function handle(data){
+    console.log(data);
        var html=$.map(data.data,function(item){
          return  `<li class="pro_item" data-guid="${item.id}">
                       <b class="pro_img">
-                          <img src="${item.bigimg}" alt="" />
+                          <img src="${item.url}" alt="" />
                       </b>
                       <div class="small_list">
                           <ul class="clearfix">

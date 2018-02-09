@@ -6,7 +6,8 @@
     if($shou=='yes'){
         $sql = "select * from goods where id=$id";
     }else{
-        $sql = "select * from goodlist where id=$id";
+        $id=$id+39;
+        $sql = "select * from newgoodlist where id=$id";
     }
     
     $res = $conn->query($sql);

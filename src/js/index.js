@@ -81,7 +81,7 @@ require(['jquery','header','lunbo'],function($,callback){
                                    <li><img src="${item.smallurl4}" alt="" /></li>
                                 </ul>
                                 </div>
-                                <span class="produ-info">${item.xinxi}</span>
+                                <span class="produ-info">${item.decrition}</span>
                                 <span class="produ-price-info">￥${item.price}</span>
                                 <span class="produ-buy-now"><b class="buy-now-btn">${item.buy}</b></span>
                                 </div>

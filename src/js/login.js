@@ -34,7 +34,7 @@ require(['jquery'],function($){
             success:function(data){
                 console.log(data);
                 if(data === 'success'){
-                    location.href = 'http://localhost:1996/';
+                    location.href = '../index.html';
                 }else if(data === 'fail'){
                     if($('.warn').length>0){
                         $('.warn').remove();
